@@ -16,6 +16,7 @@ jobs:
           kicad_sch: test/test.kicad_sch
           sch_pdf: true
           sch_bom: true
+          sch_svg: true
           sch_bom_preset: 'My Preset'
           kicad_pcb: test/test.kicad_pcb
           pcb_gerbers: true
@@ -29,6 +30,7 @@ jobs:
           name: Production files
           path: |
             ${{ github.workspace }}/test/sch.pdf
+            ${{ github.workspace }}/test/sch.svg
             ${{ github.workspace }}/test/bom.csv
             ${{ github.workspace }}/test/gbr.zip
             ${{ github.workspace }}/test/images

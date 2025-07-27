@@ -27,6 +27,16 @@ then
     "$INPUT_KICAD_SCH"
 fi
 
+# Export schematic SVG if requested
+if [[ -n $INPUT_KICAD_SCH ]] && [[ $INPUT_SCH_SVG = "true" ]]
+then
+  kicad-cli sch export svg \
+    --output "`dirname $INPUT_KICAD_SCH`" \
+    "$INPUT_KICAD_SCH"
+  mv "${INPUT_KICAD_SCH%.kicad_sch}.svg" \
+    "`dirname $INPUT_KICAD_SCH`/$INPUT_SCH_SVG_FILE"
+fi
+
 # Export schematic BOM if requested
 if [[ -n $INPUT_KICAD_SCH ]] && [[ $INPUT_SCH_BOM = "true" ]]
 then

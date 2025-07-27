@@ -16,6 +16,12 @@ inputs:
   sch_pdf_file:
     description: 'Output filename of PDF schematic'
     default: 'sch.pdf'
+  sch_svg:
+    description: 'Whether to generate SVG from schematic'
+    default: false
+  sch_svg_file:
+    description: 'Output filename of SVG schematic'
+    default: 'sch.svg'
   sch_bom:
     description: 'Whether to generate BOM from schematic'
     default: false

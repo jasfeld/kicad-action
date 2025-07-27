@@ -90,6 +90,8 @@ See this example working in the action runs of this repository.
 | `sch_erc_file`     | Output filename of ERC report                   | `erc.rpt`                    |
 | `sch_pdf`          | Whether to generate PDF from schematic          | `false`                      |
 | `sch_pdf_file`     | Output filename of PDF schematic                | `sch.pdf`                    |
+| `sch_svg`          | Whether to generate SVG from schematic          | `false`                      |
+| `sch_svg_file`     | Output filename of SVG schematic                | `sch.svg`                    |
 | `sch_bom`          | Whether to generate BOM from schematic          | `false`                      |
 | `sch_bom_file`     | Output filename of BOM                          | `bom.csv`                    |
 | `sch_bom_preset`   | Name of a BOM preset setting to use             |                              |
